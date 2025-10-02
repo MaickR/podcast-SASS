@@ -2,7 +2,7 @@
 
 > Plataforma elegida para lanzar y monetizar podcasts con una experiencia visual moderna, mobile-first y optimizada.
 
-![Mockup del landing](build/img/podcast_cover.png)
+![Mockup del landing](build/img/logo.svg)
 
 ## Tabla de contenidos
 
