@@ -15,54 +15,67 @@
     }
 
     h2 {
-        @include m.headingBorder(v.$secundario, v.$primario);
+        @include m.headingBorder(v.$blanco, v.$acento);
     }
 }
 .contenido {
     .testimonial {
-        background-color: v.$primario;
-        border: .5rem solid v.$secundario;
-        margin-bottom: 4rem;
-        padding: 2rem;
-        border-radius: 1rem;
+        background: linear-gradient(180deg, rgba(37,99,235,0.12), rgba(132,217,188,0.06));
+        border: 1px solid rgba(255,255,255,0.08);
+        margin-bottom: 3rem;
+        padding: 2.4rem;
+        border-radius: 1.2rem;
         position: relative;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.6rem;
 
         @include m.tablet { 
-            max-width: 70%;
-
-            &:nth-child(2) {
-                margin-left: 10%;
-            }
-            &:nth-child(3) {
-                margin-left: 20%;
-            }
-            &:nth-child(4) {
-                margin-left: 30%;
-            }
+            max-width: 80%;
         }
 
+        .avatar {
+            width: 6rem;
+            height: 6rem;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center;
+            border: 3px solid rgba(132,217,188,0.7);
+            box-shadow: 0 4px 12px rgba(132,217,188,0.25);
+        }
 
+        .cita {
+            margin: 0;
+            color: rgba(255,255,255,0.92);
+            text-align: center;
+            font-size: 1.8rem;
+            line-height: 1.6;
+        }
 
-
-        &::before {
-            content: '';
-            display: block;
-            width: 5rem;
-            height: 5rem;
-            background-image: url(../img/comilla.svg);
-            background-repeat: no-repeat;
-            background-position: center;
-            position: absolute;
-
+        .autor {
+            margin-top: .8rem;
+            font-size: 1.3rem;
+            color: v.$acento;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+            display: inline-block;
+            padding: .6rem 1.6rem;
+            background: linear-gradient(90deg, rgba(132,217,188,0.15), rgba(37,99,235,0.08));
+            border-radius: 2rem;
+            border: 1px solid rgba(132,217,188,0.4);
+            text-align: center;
+            white-space: nowrap;
+            
+            @include m.tablet { 
+                padding: .7rem 2rem;
+            }
         }
 
         &:last-of-type {
             margin-bottom: 0;
-        }
-
-        p {
-            margin: 0;
-            padding-left: 6rem;
         }
     }
 }

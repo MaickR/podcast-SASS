@@ -110,22 +110,32 @@
 
     <section class="contenedor seccion testimoniales">
         <div class="imagen">
-            <img src="build/img/app.jpg" alt="imagen app">
+            <picture>
+                <source srcset="build/img/podcast_cover.avif" type="image/avif">
+                <source srcset="build/img/podcast_cover.webp" type="image/webp">
+                <img src="build/img/podcast_cover.png" alt="mockup de la app de podcast">
+            </picture>
         </div>
 
         <div class="contenido">
             <h2>Testimoniales</h2>
 
             <div class="testimonial">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, voluptatum pariatur ea tempora aliquid quisquam sequi labore nemo debitis maiores, aperiam.</p>
+                <img class="avatar" src="https://i.pravatar.cc/100?u=ana-castillo-tech" alt="Foto de Ana Castillo" loading="lazy">
+                <p class="cita">“En 2 semanas lanzamos nuestro podcast y ya estamos en Spotify y Apple. La distribución automática nos ahorró horas.”</p>
+                <p class="autor">Ana Castillo — Creadora de "Tech al Día"</p>
             </div>
 
             <div class="testimonial">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, voluptatum pariatur ea tempora aliquid quisquam sequi labore nemo debitis maiores, aperiam.</p>
+                <img class="avatar" src="https://i.pravatar.cc/100?u=javier-flores-marketing" alt="Foto de Javier Flores" loading="lazy">
+                <p class="cita">“Las estadísticas me ayudaron a entender qué episodios funcionan. Subimos 3x en escuchas en un mes.”</p>
+                <p class="autor">Javier Flores — Host de "Marketing en Corto"</p>
             </div>
 
             <div class="testimonial">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, voluptatum pariatur ea tempora aliquid quisquam sequi labore nemo debitis maiores, aperiam.</p>
+                <img class="avatar" src="https://i.pravatar.cc/100?u=maria-perez-podcast" alt="Foto de María Pérez" loading="lazy">
+                <p class="cita">“Grabo desde el móvil y el sistema publica en todas partes. Es justo lo que necesitaba para ser constante.”</p>
+                <p class="autor">María Pérez — Podcaster independiente</p>
             </div>
         </div>
     </section>
@@ -161,6 +171,10 @@
                     <a href="#">Blog</a>
                     <a href="#">Clientes</a>
                 </nav>
+            </div>
+            <div class="footer-widget social">
+                <h3>GitHub</h3>
+                <a class="btn-github" href="https://github.com/MaickR" target="_blank" rel="noopener noreferrer" aria-label="GitHub de MaickR">@MaickR</a>
             </div>
         </div>
 

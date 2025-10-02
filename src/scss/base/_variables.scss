@@ -7,8 +7,15 @@ $tablet: 768px;
 $desktop: 1024px;
 
 // Colores
-$primario: #84d9bc;
-$secundario: #313c4e; 
-$secundarioOpacity: rgb( 57 70 89 / .7 );
+// Nueva paleta: Azul + Negro (estética moderna)
+// Primario: azul brillante para acentos y botones
+$primario: #2563EB; // Indigo 600
+// Secundario: casi negro para fondos oscuros
+$secundario: #0B1220; 
+// Opacidad del secundario para overlays
+$secundarioOpacity: rgb( 11 18 32 / .7 );
 $negro: #000;
 $blanco: #FFFFFF;
+
+// Acento que combina con el verde claro del logo/iconos existentes
+$acento: #84D9BC; // manteniendo compatibilidad con branding previo

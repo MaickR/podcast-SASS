@@ -12,9 +12,11 @@ html {
 body {
     font-family: v.$fuente_principal;
     font-size: 1.6rem;
+    background-color: v.$secundario;
+    color: v.$blanco;
 }
 p {
-    color: v.$negro;
+    color: v.$blanco;
     font-size: 2rem;
     line-height: 2;
 }

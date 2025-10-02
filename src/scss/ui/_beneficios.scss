@@ -2,7 +2,7 @@
 @use 'base/mixins' as m;
 
 .beneficios {
-    background-color: v.$primario;
+    background: linear-gradient(135deg, rgba(37,99,235,0.08), rgba(11,18,32,0.08));
 
     .grid-beneficios {
         @include m.tablet { 
@@ -14,7 +14,7 @@
         grid-column: 1 / 4;
 
         h2 {
-            @include m.headingBorder( v.$secundario, v.$blanco );
+            @include m.headingBorder( v.$blanco, v.$acento );
         }
     }
     .imagen {
@@ -23,7 +23,7 @@
         transition-duration: .3s;
 
         &:hover {
-            transform: rotate(8deg) scale(1.1);
+            transform: rotate(2deg) scale(1.03);
         }
     }
 }

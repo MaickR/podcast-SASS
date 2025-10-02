@@ -8,6 +8,6 @@
     }
 
     h2 {
-        @include m.headingBorder( v.$secundario, v.$primario );
+        @include m.headingBorder( v.$blanco, v.$acento );
     }
 }

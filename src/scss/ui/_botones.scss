@@ -2,11 +2,12 @@
 @use 'base/mixins' as m;
 
 .boton-primario {
-    @include m.boton(v.$primario, v.$secundario);
+    // Primario azul; texto blanco mejora contraste en tema oscuro
+    @include m.boton(v.$primario, v.$blanco);
 }
 .boton-plan {
     @extend .boton-primario;
-    border: 2px solid v.$blanco;
+    border: 2px solid v.$acento;
     margin-top: 2rem;
     display: block;
 }
